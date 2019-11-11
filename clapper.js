@@ -22,15 +22,14 @@ clap.addClapsListener(claps => {
 }, { number: 1, delay: 0 })
  
 clap.addClapsListener(claps => {
-    console.log("ONE clap");
+    console.log("change tv channel")
   }, { number: 1, delay: 0 })
 
 clap.addClapsListener(claps => {
-  console.log("TWO CLAPS", claps);
+  console.log("turn tv on", claps)
 }, { number: 2, delay: 1200 })
  
 clap.addClapsListener(claps => {
-  console.log("THREE CLAPS", claps);
   console.log("ZALIA BALTA BUS !!!", claps);
 
   axios.get(`${baseUrl}/led/effects/play/1`)
